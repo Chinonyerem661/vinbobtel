@@ -10,7 +10,7 @@ interface WhyChooseUsProps {
 }
 
 const CheckIcon = () => (
-  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="shrink-0 mt-[2px]">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" className="shrink-0 mt-[2px]">
     <circle cx="12" cy="12" r="10" stroke="#466270" strokeWidth="1.2" />
     <path d="M8 12.5l2.5 2.5 5.5-5.5" stroke="#466270" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
   </svg>
@@ -50,7 +50,7 @@ export default function SolutionsWhyChooseUs({
   features = defaultFeatures,
 }: WhyChooseUsProps) {
   return (
-    <section className="flex flex-col lg:flex-row w-full w-full min-h-[600px] bg-[#e6f7fa]">
+    <section className="flex flex-col lg:flex-row w-full w-full min-h-[600px] bg-[#eef7f9]">
       {/* Left: Image */}
       <div className="w-full lg:w-[45%] xl:w-[40%] relative min-h-[400px] lg:min-h-[auto]">
         <img
@@ -61,20 +61,20 @@ export default function SolutionsWhyChooseUs({
       </div>
 
       {/* Right: Content */}
-      <div className="w-full lg:w-[55%] xl:w-[60%] px-8 sm:px-16 lg:px-24 xl:px-32 py-16 sm:py-24 flex flex-col justify-center">
-        <h2 className="text-[#0a1f3c] text-[32px] sm:text-[42px] font-[800] mb-10 leading-tight">
+      <div className="w-full lg:w-[55%] xl:w-[60%] px-8 sm:px-16 lg:px-24 xl:px-32 py-16 sm:py-24 flex flex-col justify-center text-[#0a1f3c]">
+        <h2 className="text-[36px] sm:text-[44px] font-[800] mb-12 leading-tight">
           {heading}
         </h2>
 
-        <ul className="space-y-8 max-w-2xl">
+        <ul className="space-y-6 max-w-2xl">
           {features.map((feature) => (
             <li key={feature.title} className="flex gap-4 items-start">
               <CheckIcon />
-              <div>
-                <p className="text-[#0a1f3c] text-[15px] sm:text-[16px] font-[800] mb-[6px] leading-[1.2]">
+              <div className="pt-0.5">
+                <p className="text-[17px] sm:text-[18px] font-bold mb-2 leading-[1.2]">
                   {feature.title}
                 </p>
-                <p className="text-[#495f70] text-[13px] sm:text-[14px] leading-[1.7] font-[500]">
+                <p className="text-[#0a1f3c] text-[14px] sm:text-[15px] leading-[1.75] font-medium opacity-90">
                   {feature.description}
                 </p>
               </div>

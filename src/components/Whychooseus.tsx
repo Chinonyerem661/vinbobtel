@@ -32,18 +32,21 @@ const reasons = [
 
 function CheckIcon() {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      className="w-5 h-5 flex-shrink-0 mt-0.5"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke="#6d28d9"
-      strokeWidth={2}
-    >
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="shrink-0 mt-1">
+      {/* Circle with a gap for the checkmark tail */}
       <path
+        d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9c2.39 0 4.56.94 6.18 2.47"
+        stroke="#466270"
+        strokeWidth="1.2"
+        strokeLinecap="round"
+      />
+      {/* Checkmark that "comes out" of the circle */}
+      <path
+        d="M9 11l3 3L22 4"
+        stroke="#466270"
+        strokeWidth="1.5"
         strokeLinecap="round"
         strokeLinejoin="round"
-        d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
       />
     </svg>
   );
@@ -63,25 +66,25 @@ export default function WhyChooseUs() {
         />
       </div>
 
-      {/* ── Right: Pink content panel ── */}
+      {/* ── Right: Soft Pink content panel ── */}
       <div
-        className="w-full lg:w-1/2 flex items-center px-10 sm:px-14 py-20"
-        style={{ backgroundColor: "#f9d0cc" }}
+        className="w-full lg:w-1/2 flex items-center px-8 sm:px-16 lg:px-20 py-16 sm:py-24"
+        style={{ backgroundColor: "#fbd3d1" }}
       >
-        <div className="max-w-xl w-full">
-          <h2 className="text-[32px] sm:text-4xl font-[800] text-[#1a1a2e] mb-8 leading-tight">
+        <div className="max-w-2xl w-full">
+          <h2 className="text-[36px] sm:text-[40px] font-[800] text-[#0a1f3c] mb-10 leading-tight">
             Why choose us
           </h2>
 
-          <ul className="space-y-5">
+          <ul className="space-y-7">
             {reasons.map((reason) => (
               <li key={reason.title} className="flex items-start gap-3">
                 <CheckIcon />
-                <div>
-                  <p className="text-[14px] font-bold text-[#1a1a2e] mb-0.5">
+                <div className="pt-0.5">
+                  <p className="text-[17.5px] sm:text-[18px] font-black text-[#0a1f3c] mb-1">
                     {reason.title}
                   </p>
-                  <p className="text-[13px] text-gray-700 leading-relaxed italic">
+                  <p className="text-[14.5px] sm:text-[15px] text-black leading-[1.6] font-normal max-w-2xl">
                     {reason.description}
                   </p>
                 </div>

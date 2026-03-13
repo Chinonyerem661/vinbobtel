@@ -54,11 +54,11 @@ function SolutionCard({ icon, title, description, href, highlighted = false }: S
   return (
     <Link
       href={href}
-      className="flex flex-col items-center text-center p-8 rounded-xl bg-white transition-all duration-300 hover:-translate-y-1 border border-[#d6eaed] hover:shadow-[0_8px_30px_rgba(109,40,217,0.10)]"
+      className="flex flex-col items-center text-center px-12 py-9 sm:p-8 rounded-xl bg-white transition-all duration-300 hover:-translate-y-1 border border-[#d6eaed] hover:shadow-[0_8px_30px_rgba(109,40,217,0.10)]"
     >
-      <div className="mb-5">{icon}</div>
-      <h3 className="text-lg font-[800] text-gray-900 mb-3">{title}</h3>
-      <p className="text-sm text-gray-500 leading-relaxed font-normal">{description}</p>
+      <div className="mb-4 sm:mb-5">{icon}</div>
+      <h3 className="text-[17px] sm:text-lg font-[800] text-gray-900 mb-2 sm:mb-3 uppercase sm:normal-case">{title}</h3>
+      <p className="text-[14.5px] sm:text-sm text-gray-900 leading-relaxed font-bold sm:font-normal max-w-[260px] sm:max-w-none">{description}</p>
     </Link>
   );
 }
@@ -67,7 +67,7 @@ function SolutionCard({ icon, title, description, href, highlighted = false }: S
 export default function SolutionsSection() {
   return (
     <section className="py-20" style={{ backgroundColor: "#eef1f8" }}>
-      <div className="max-w-[1240px] mx-auto px-5 sm:px-6 lg:px-8">
+      <div className="max-w-[1340px] mx-auto px-8 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start">
 
           {/* ── Left: Text ── */}
@@ -91,15 +91,12 @@ export default function SolutionsSection() {
               className="inline-flex items-center gap-2 px-8 py-3.5 text-sm font-black uppercase tracking-widest text-white transition-all duration-200 hover:opacity-90 hover:-translate-y-0.5"
               style={{ backgroundColor: "#6d28d9" }}
             >
-              Learn More
-              <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-              </svg>
+              Learn More →
             </Link>
           </div>
 
           {/* ── Right: 2x2 Card Grid ── */}
-          <div className="w-full lg:w-7/12 grid grid-cols-1 sm:grid-cols-2 gap-5">
+          <div className="w-full lg:w-7/12 grid grid-cols-1 sm:grid-cols-2 gap-5 px-5 sm:px-0">
             <SolutionCard
               icon={<VoiceIcon />}
               title="Voice Calls"

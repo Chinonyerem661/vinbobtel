@@ -7,7 +7,7 @@ interface SectionIntroProps {
 export default function SectionIntro({ title, text, paddingY = "py-16 sm:py-24" }: SectionIntroProps) {
   return (
     <section className="w-full bg-white flex justify-center">
-      <div className={`w-full max-w-[1240px] px-4 sm:px-6 lg:px-8 ${paddingY}`}>
+      <div className={`w-full max-w-[1340px] px-8 sm:px-6 lg:px-8 ${paddingY}`}>
         {title && (
           <h2 className="text-[#0a1f3c] text-[28px] sm:text-[32px] font-[800] mb-8 leading-tight">
             {title}

@@ -28,7 +28,7 @@ export default function PageHero({ label, title, imageSrc, imageAlt = "" }: Page
       />
 
       {/* Text content */}
-      <div className="relative z-10 h-full flex flex-col justify-center max-w-[1240px] mx-auto px-5 sm:px-6 lg:px-8">
+      <div className="relative z-10 h-full flex flex-col justify-center max-w-[1340px] mx-auto px-8 sm:px-6 lg:px-8">
         <p className="text-[11px] sm:text-xs font-bold uppercase tracking-[0.2em] text-gray-300 mb-3">
           {label}
         </p>

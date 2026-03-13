@@ -1,7 +1,18 @@
 const checkIcon = (
-  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="mt-0.5 shrink-0">
-    <circle cx="12" cy="12" r="10" stroke="#0f1f3d" strokeWidth="1.5" />
-    <path d="M7.5 12.5l3 3 5-5" stroke="#0f1f3d" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="shrink-0 mt-1">
+    <path
+      d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9c2.39 0 4.56.94 6.18 2.47"
+      stroke="#0f1f3d"
+      strokeWidth="1.2"
+      strokeLinecap="round"
+    />
+    <path
+      d="M9 11l3 3L22 4"
+      stroke="#0f1f3d"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
   </svg>
 );
 
@@ -14,7 +25,7 @@ const pillars = [
 export default function ContinuousEvolution() {
   return (
     <section className="bg-white py-12 sm:py-[72px]">
-      <div className="max-w-[1240px] mx-auto px-5 sm:px-6 lg:px-8">
+      <div className="max-w-[1340px] mx-auto px-8 sm:px-6 lg:px-8">
         <h2 className="text-[28px] sm:text-4xl font-[700] text-[#0f1f3d] mb-8 leading-[1.2]">
           Continuous evolution and development
         </h2>

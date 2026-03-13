@@ -70,7 +70,7 @@ function SolutionCard({ icon, title, description, href, highlighted = false }: S
 export default function SolutionsGrid() {
   return (
     <section className="py-24 flex justify-center w-full" style={{ backgroundColor: "#f2f7fc" }}>
-      <div className="w-full max-w-[1240px] px-5 sm:px-6 lg:px-8">
+      <div className="w-full max-w-[1340px] px-5 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 overflow-hidden">
             <SolutionCard
               icon={<VoiceIcon />}

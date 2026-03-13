@@ -22,7 +22,7 @@ export default function PageHero({
         style={{ backgroundColor: "rgba(20, 30, 70, 0.55)" }}
       />
 
-      <div className="relative z-10 w-full max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 w-full max-w-[1340px] mx-auto px-8 sm:px-6 lg:px-8">
         <p className="text-gray-100 text-[11px] sm:text-xs font-bold uppercase tracking-[0.2em] mb-2 sm:mb-3">
           {label}
         </p>

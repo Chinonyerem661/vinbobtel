@@ -5,7 +5,7 @@ const PATTERN_URL = "https://vinbobtel.com/wp-content/uploads/2020/12/pattern.sv
 export default function CTABanner() {
   return (
     <section
-      className="relative overflow-hidden py-12 px-6"
+      className="relative overflow-hidden py-12 px-8"
       style={{ backgroundColor: "#e60000" }}
     >
       {/* SVG pattern background */}
@@ -19,7 +19,7 @@ export default function CTABanner() {
       />
 
       {/* Content */}
-      <div className="relative z-10 max-w-[1240px] mx-auto flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-10">
+      <div className="relative z-10 max-w-[1340px] mx-auto flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-10">
         <p className="text-xl sm:text-[26px] font-bold text-white text-center sm:text-left">
           Feel free to contact us
         </p>

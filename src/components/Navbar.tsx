@@ -133,7 +133,7 @@ export default function Navbar() {
             scrolled || pathname !== "/" ? "#ffffff" : "transparent",
         }}
       >
-        <div className="max-w-[1240px] w-full mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between relative h-full">
+        <div className="max-w-[1340px] w-full mx-auto px-8 sm:px-6 lg:px-8 flex items-center justify-between relative h-full">
           {/* Logo */}
           <VinbobLogo scrolled={scrolled} />
 
@@ -222,48 +222,58 @@ export default function Navbar() {
         
         {/* Mobile Menu Drawer */}
         <div
-          className={`fixed top-0 right-0 h-[100dvh] w-[280px] sm:w-[320px] z-50 transform transition-transform duration-300 ease-in-out ${
+          className={`fixed top-0 right-0 h-[100dvh] w-[260px] sm:w-[260px] z-50 transform transition-transform duration-300 ease-in-out ${
             mobileOpen ? "translate-x-0 shadow-2xl" : "translate-x-full"
           } lg:hidden overflow-y-auto`}
-          style={{ backgroundColor: "#caebec" }}
+          style={{ backgroundColor: "#c2e5e9ff" }}
         >
-          <div className="flex justify-end p-6">
-            <button onClick={() => setMobileOpen(false)} className="p-1">
+          <div className="flex justify-end p-6 mb-0">
+            <button onClick={() => setMobileOpen(false)} className="p-1 hover:opacity-70 transition-opacity">
               <CloseIcon />
             </button>
           </div>
-          <nav className="px-8 pb-10 flex flex-col gap-6 mt-2">
+          <nav className="px-10 pb-10 flex flex-col gap-2">
             {navLinks.map((link) =>
               link.children ? (
                 <div key={link.label}>
                   <div className="w-full flex items-center justify-between">
                     <Link
                       href={link.href}
-                      className="text-[17px] font-bold text-[#111] leading-none"
+                      className="text-[18px] font-bold text-black hover:text-[#7c3aed] transition-colors"
                       onClick={() => setMobileOpen(false)}
                     >
                       {link.label}
                     </Link>
                     <button
-                      className="p-1 -mr-1"
+                      className="p-1"
                       onClick={() => setMobileSolutionsOpen((o) => !o)}
                     >
-                      <ChevronDown className={mobileSolutionsOpen ? "rotate-180" : ""} />
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className={`w-5 h-5 text-black transition-transform duration-300 ${mobileSolutionsOpen ? "rotate-0" : "rotate-180"}`}
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+                      </svg>
                     </button>
                   </div>
                   <div
-                    className={`overflow-hidden transition-all duration-300 flex flex-col gap-5 ${
-                      mobileSolutionsOpen ? "max-h-64 opacity-100 mt-5" : "max-h-0 opacity-0 mt-0"
+                    className={`overflow-hidden transition-all duration-300 flex flex-col gap-3 ${
+                      mobileSolutionsOpen ? "max-h-80 opacity-100 mt-3" : "max-h-0 opacity-0 mt-0"
                     }`}
                   >
                     {link.children.map((child) => (
                       <Link
                         key={child.label}
                         href={child.href}
-                        className="flex items-center text-[15px] font-medium text-[#111] leading-none transition-colors hover:text-blue-900"
+                        className="flex items-center text-[16px] font-bold text-black hover:text-[#7c3aed] transition-colors pl-4"
                         onClick={() => setMobileOpen(false)}
                       >
-                        <span className="mr-3 text-[14px] text-gray-600 font-bold leading-none">·</span> {child.label}
+                        <span className="w-1 h-1 rounded-full bg-gray-400 mr-4"></span>
+                        {child.label}
                       </Link>
                     ))}
                   </div>
@@ -272,7 +282,7 @@ export default function Navbar() {
                 <Link
                   key={link.label}
                   href={link.href}
-                  className="text-[17px] font-bold text-[#111] block leading-none transition-colors hover:text-blue-900"
+                  className="text-[18px] font-bold text-black block hover:text-[#7c3aed] transition-colors"
                   onClick={() => setMobileOpen(false)}
                 >
                   {link.label}
