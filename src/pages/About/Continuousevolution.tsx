@@ -30,11 +30,11 @@ export default function ContinuousEvolution() {
           Continuous evolution and development
         </h2>
 
-        <p className="text-base text-gray-600 leading-[1.7] mb-6">
+        <p className="text-base text-gray-900 leading-[1.7] mb-6">
           Our emphasis in technology and process automation has allowed Vinbobtel to remain as one of the leading voice and SMS carriers, with global connectivity and limitless adaptation to the different challenges of the ever-changing wholesale markets.
         </p>
 
-        <p className="text-base text-gray-600 leading-[1.7] mb-8">
+        <p className="text-base text-gray-900 leading-[1.7] mb-8">
           Our company is built on the idea of empowerment and the removal of the arbitrary limits that had held small to mid-range telecom businesses down for far too long. Our longstanding commitment to excellence, innovative products, and dedication to phenomenal customer service provides our clients with the support system they need to take their business to the next level.
         </p>
 
@@ -46,7 +46,7 @@ export default function ContinuousEvolution() {
                 <div>
                   <p className="text-base font-bold text-[#0f1f3d] mb-1">{p.title}</p>
                   {p.description && (
-                    <p className="text-[15px] text-gray-600 leading-[1.6]">{p.description}</p>
+                    <p className="text-[15px] text-gray-900 leading-[1.6]">{p.description}</p>
                   )}
                   {p.bullets && p.bullets.map((b) => (
                     <p key={b} className="text-[15px] font-bold text-[#0f1f3d] leading-[1.6]">{b}</p>

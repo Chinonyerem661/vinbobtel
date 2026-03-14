@@ -11,7 +11,7 @@ declare global {
   }
 }
 
-// ─── Vinbob Logo ──────────────────────────────────────────────────────────────
+// ─── Vinbob Logo 
 function VinbobLogo({ scrolled = false }: { scrolled?: boolean }) {
   return (
     <Link href="/" className="flex-shrink-0 z-20">
@@ -29,7 +29,7 @@ function VinbobLogo({ scrolled = false }: { scrolled?: boolean }) {
   );
 }
 
-// ─── Chevron Down ─────────────────────────────────────────────────────────────
+// ─── Chevron Down 
 function ChevronDown({ className = "" }: { className?: string }) {
   return (
     <svg
@@ -45,10 +45,10 @@ function ChevronDown({ className = "" }: { className?: string }) {
   );
 }
 
-// ─── Hamburger Icon ───────────────────────────────────────────────────────────
+// ─── Hamburger Icon
 function HamburgerIcon() {
   return (
-    <div className="flex flex-col justify-center items-center w-11 h-11 border border-gray-400 rounded-sm gap-1.5 ml-auto">
+    <div className="flex flex-col justify-center items-center w-11 h-11 border border-gray-200 rounded-sm gap-1.5 ml-auto">
       <span className="w-5 h-[1.5px] bg-[#000] block"></span>
       <span className="w-5 h-[1.5px] bg-[#000] block"></span>
       <span className="w-5 h-[1.5px] bg-[#000] block"></span>
@@ -56,7 +56,7 @@ function HamburgerIcon() {
   );
 }
 
-// ─── Close Icon ──────────────────────────────────────────────────────────────
+// ─── Close Icon 
 function CloseIcon() {
   return (
     <svg
@@ -72,14 +72,14 @@ function CloseIcon() {
   );
 }
 
-// ─── Types ────────────────────────────────────────────────────────────────────
+//Types
 interface NavLink {
   label: string;
   href: string;
   children?: { label: string; href: string }[];
 }
 
-// ─── Nav Data ─────────────────────────────────────────────────────────────────
+// ─── Nav Data 
 const navLinks: NavLink[] = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
@@ -96,7 +96,7 @@ const navLinks: NavLink[] = [
   { label: "Contact", href: "/contact" },
 ];
 
-// ─── Navbar ───────────────────────────────────────────────────────────────────
+// ─── Navbar 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState<boolean>(false);
   const [mobileOpen, setMobileOpen] = useState<boolean>(false);

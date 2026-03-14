@@ -11,8 +11,21 @@ interface WhyChooseUsProps {
 
 const CheckIcon = () => (
   <svg width="28" height="28" viewBox="0 0 24 24" fill="none" className="shrink-0 mt-[2px]">
-    <circle cx="12" cy="12" r="10" stroke="#466270" strokeWidth="1.2" />
-    <path d="M8 12.5l2.5 2.5 5.5-5.5" stroke="#466270" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+    {/* Circle with a gap for the checkmark tail */}
+    <path
+      d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9c2.39 0 4.56.94 6.18 2.47"
+      stroke="#466270"
+      strokeWidth="1.2"
+      strokeLinecap="round"
+    />
+    {/* Checkmark that "comes out" of the circle */}
+    <path
+      d="M9 11l3 3L22 4"
+      stroke="#466270"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
   </svg>
 );
 
@@ -74,7 +87,7 @@ export default function SolutionsWhyChooseUs({
                 <p className="text-[17px] sm:text-[18px] font-bold mb-2 leading-[1.2]">
                   {feature.title}
                 </p>
-                <p className="text-[#0a1f3c] text-[14px] sm:text-[15px] leading-[1.75] font-medium opacity-90">
+                <p className="text-gray-900 text-[14px] sm:text-[15px] leading-[1.75] font-normal">
                   {feature.description}
                 </p>
               </div>

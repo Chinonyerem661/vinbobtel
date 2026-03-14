@@ -9,7 +9,7 @@ interface PageHeroProps {
 
 export default function PageHero({ label, title, imageSrc, imageAlt = "" }: PageHeroProps) {
   return (
-    <section className="relative w-full overflow-hidden h-[240px] sm:h-[260px] lg:h-[300px]">
+    <section className="relative w-full overflow-hidden h-[300px] sm:h-[260px] lg:h-[300px]">
 
       {/* Background image */}
       <Image
@@ -28,11 +28,11 @@ export default function PageHero({ label, title, imageSrc, imageAlt = "" }: Page
       />
 
       {/* Text content */}
-      <div className="relative z-10 h-full flex flex-col justify-center max-w-[1340px] mx-auto px-8 sm:px-6 lg:px-8">
-        <p className="text-[11px] sm:text-xs font-bold uppercase tracking-[0.2em] text-gray-300 mb-3">
+      <div className="relative z-10 h-full flex flex-col justify-center max-w-[1340px] mx-auto px-6 sm:px-6 lg:px-8">
+        <p className="text-[13px] sm:text-xs font-bold uppercase tracking-[0.2em] text-white mb-3">
           {label}
         </p>
-        <h1 className="text-[26px] sm:text-[32px] lg:text-[38px] font-[800] text-white leading-[1.2] max-w-md sm:max-w-lg">
+        <h1 className="text-[29px] sm:text-[32px] lg:text-[38px] font-[800] text-white leading-[1.2] max-w-none sm:max-w-lg">
           {title}
         </h1>
       </div>
