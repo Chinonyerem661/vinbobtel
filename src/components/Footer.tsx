@@ -14,7 +14,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-// ─── Chevron Right Icon ───────────────────────────────────────────────────────
+// Chevron Right Icon
 function ChevronRight() {
   return (
     <svg
@@ -30,7 +30,7 @@ function ChevronRight() {
   );
 }
 
-// ─── Footer Link ──────────────────────────────────────────────────────────────
+// Footer Link
 function FooterLink({ href, label }: { href: string; label: string }) {
   return (
     <li>
@@ -45,7 +45,7 @@ function FooterLink({ href, label }: { href: string; label: string }) {
   );
 }
 
-// ─── Footer ───────────────────────────────────────────────────────────────────
+// Footer
 export default function Footer() {
   return (
     <footer className="relative overflow-hidden" style={{ backgroundColor: "#0b2099ff" }}>

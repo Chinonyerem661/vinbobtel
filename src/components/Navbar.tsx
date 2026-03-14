@@ -11,7 +11,7 @@ declare global {
   }
 }
 
-// ─── Vinbob Logo 
+// Vinbob Logo
 function VinbobLogo({ scrolled = false }: { scrolled?: boolean }) {
   return (
     <Link href="/" className="flex-shrink-0 z-20">
@@ -29,7 +29,7 @@ function VinbobLogo({ scrolled = false }: { scrolled?: boolean }) {
   );
 }
 
-// ─── Chevron Down 
+// Chevron Down
 function ChevronDown({ className = "" }: { className?: string }) {
   return (
     <svg
@@ -56,7 +56,7 @@ function HamburgerIcon() {
   );
 }
 
-// ─── Close Icon 
+// Close Icon
 function CloseIcon() {
   return (
     <svg
@@ -79,7 +79,7 @@ interface NavLink {
   children?: { label: string; href: string }[];
 }
 
-// ─── Nav Data 
+// Nav Data
 const navLinks: NavLink[] = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
@@ -96,7 +96,7 @@ const navLinks: NavLink[] = [
   { label: "Contact", href: "/contact" },
 ];
 
-// ─── Navbar 
+// Navbar
 export default function Navbar() {
   const [scrolled, setScrolled] = useState<boolean>(false);
   const [mobileOpen, setMobileOpen] = useState<boolean>(false);

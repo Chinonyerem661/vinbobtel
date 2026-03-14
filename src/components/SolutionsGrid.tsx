@@ -1,13 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
 
-// ─── Assets ───────────────────────────────────────────────────────────────────
+//Assets
 import MicrophoneIcon from "@/assets/microphone.svg";
 import ChatBoxIcon from "@/assets/chat box.svg";
 import ManagedServicesIcon from "@/assets/managed services.svg";
 import IvrServicesIcon from "@/assets/ivr services.svg";
 
-// ─── Icons ────────────────────────────────────────────────────────────────────
+//Icons
 
 function VoiceIcon() {
   return (
@@ -53,7 +53,7 @@ function IvrIcon() {
   );
 }
 
-// ─── Solution Card ────────────────────────────────────────────────────────────
+//Solution Card
 interface SolutionCardProps {
   icon: React.ReactNode;
   title: string;
@@ -79,7 +79,7 @@ function SolutionCard({ icon, title, description, href, highlighted = false }: S
   );
 }
 
-// ─── Solutions Grid ────────────────────────────────────────────────────────
+// Solutions Grid
 
 export default function SolutionsGrid() {
   return (

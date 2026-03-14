@@ -56,7 +56,7 @@ export default function WhyChooseUs() {
   return (
     <section className="flex flex-col lg:flex-row min-h-[700px]">
 
-      {/* ── Left: Full image ── */}
+      {/* Left: Full image */}
       <div className="relative w-full lg:w-1/2 min-h-[450px] lg:min-h-0">
         <Image
           src={CHOOSE_IMAGE}
@@ -66,7 +66,7 @@ export default function WhyChooseUs() {
         />
       </div>
 
-      {/* ── Right: Soft Pink content panel ── */}
+      {/* Right: Soft Pink content panel */}
       <div
         className="w-full lg:w-1/2 flex items-center px-8 sm:px-16 lg:px-20 py-16 sm:py-24"
         style={{ backgroundColor: "#fbd3d1" }}

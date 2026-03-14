@@ -1,13 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
 
-// ─── Assets ───────────────────────────────────────────────────────────────────
+// Assets
 import MicrophoneIcon from "@/assets/microphone.svg";
 import ChatBoxIcon from "@/assets/chat box.svg";
 import ManagedServicesIcon from "@/assets/managed services.svg";
 import IvrServicesIcon from "@/assets/ivr services.svg";
 
-// ─── Icons ────────────────────────────────────────────────────────────────────
+// Icons
 
 function VoiceIcon() {
   return (
@@ -53,7 +53,7 @@ function IvrIcon() {
   );
 }
 
-// ─── Solution Card ────────────────────────────────────────────────────────────
+// Solution Card
 interface SolutionCardProps {
   icon: React.ReactNode;
   title: string;
@@ -75,14 +75,14 @@ function SolutionCard({ icon, title, description, href, highlighted = false }: S
   );
 }
 
-// ─── Solutions Section ────────────────────────────────────────────────────────
+// Solutions Section
 export default function SolutionsSection() {
   return (
     <section className="py-20" style={{ backgroundColor: "#eef1f8" }}>
       <div className="max-w-[1340px] mx-auto px-8 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start">
 
-          {/* ── Left: Text ── */}
+          {/* Left: Text */}
           <div className="w-full lg:w-5/12 lg:pt-6">
             <p
               className="text-sm font-black uppercase tracking-widest mb-4"
@@ -107,7 +107,7 @@ export default function SolutionsSection() {
             </Link>
           </div>
 
-          {/* ── Right: 2x2 Card Grid ── */}
+          {/* Right: 2x2 Card Grid */}
           <div className="w-full lg:w-7/12 grid grid-cols-1 sm:grid-cols-2 gap-5 px-5 sm:px-0">
             <SolutionCard
               icon={<VoiceIcon />}
